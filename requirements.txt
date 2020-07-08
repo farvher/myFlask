@@ -3,12 +3,12 @@ bs4==0.0.1
 click==7.1.2
 Flask==1.1.2
 Flask-SQLAlchemy==2.4.3
-get==0.0.0
+get==2020.7.1
 gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-post==2020.7.1
+post==0.0.0
 query-string==0.0.0
 request==0.0.0
 soupsieve==2.0.1
