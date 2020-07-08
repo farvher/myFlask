@@ -45,8 +45,7 @@ def articles():
 @app.route('/extractor')
 def extractor():
     ex = Extractor("https://www.pulzo.com/")
-    ex.search_href_recursive()
-    hrefs = ex.my_href
+    hrefs = ex.search_href()
     hrefs = dict.fromkeys(hrefs)
 
     for h in hrefs:
@@ -86,3 +85,7 @@ def new():
             flash('Record was successfully added')
             return redirect(url_for('articles'))
     return render_template('new.html')
+
+
+if __name__ == '__main__':
+    app.run()
